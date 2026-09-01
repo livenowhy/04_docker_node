@@ -1,0 +1,30 @@
+{
+    "title": "个人文档笔记",
+    "description": "个人文档笔记, 学习记录",
+    "author": "livenowhy",
+
+    "links": {
+      "sharing": {
+          "google": false,
+          "facebook": false,
+          "twitter": false,
+          "weibo": false,
+          "all": false
+      }
+    },
+    "plugins":[
+      "-lunr",
+      "expandable-chapters",
+      "katex",
+      "ad"
+    ],
+    "pluginsConfig": {
+        "ad": {
+          "contentBottom": "%3Cdiv%3E%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A//www.miitbeian.gov.cn%22%3E%u8C6BICP%u590715020239%u53F7-1%3C/a%3E%3C/div%3E"
+        }
+    },
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css"
+    }
+}
