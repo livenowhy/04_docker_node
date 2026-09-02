@@ -124,8 +124,8 @@
     "vite-plugin-vue-devtools": "^7.3.5",
     "vue-tsc": "^2.0.26"
   },
-  "repository": "https://gitee.com/youlaiorg/vue3-element-admin.git",
-  "author": "有来开源组织",
+  "repository": "https://github.com/livenowhy/front",
+  "author": "livenowhy-个人信息管理平台",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
