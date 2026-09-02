@@ -1,0 +1,8 @@
+# pnpm 11 默认阻止依赖包运行构建脚本 (postinstall 等)
+# allowBuilds 键为包名(或 包名@版本范围), 值为 true/false; 单独包名匹配所有版本
+# 若报错中还有其他被拒绝的包, 追加到列表
+# 如需放行所有构建脚本(存在供应链风险, 不推荐), 可改用:
+# dangerouslyAllowAllBuilds: true
+allowBuilds:
+  "@parcel/watcher": true
+  "es5-ext": true

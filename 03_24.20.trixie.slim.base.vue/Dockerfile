@@ -5,6 +5,8 @@ RUN npm install -g pnpm
 RUN pnpm config set registry https://registry.npmmirror.com
 
 ADD package.json /share/modules/package.json
+# pnpm 11 默认阻止依赖构建脚本, 通过 pnpm-workspace.yaml 白名单放行
+ADD pnpm-workspace.yaml /share/modules/pnpm-workspace.yaml
 RUN cd /share/modules && pnpm install
 
 # crpi-8kvyt6flnal17nk5.cn-beijing.personal.cr.aliyuncs.com/liveno/node:24.20.trixie.slim.vue
