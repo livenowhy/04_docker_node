@@ -9,7 +9,17 @@ WORKDIR /share
 RUN npm install -g pnpm
 RUN pnpm config set registry https://registry.npmmirror.com
 
-EXPOSE 9001 9002 9003 9004 9005 9006 9007 9008 9009 9010 4000 35729
+EXPOSE 9001 
+EXPOSE 9002
+EXPOSE 9003
+EXPOSE 9004
+EXPOSE 9005
+EXPOSE 9006
+EXPOSE 9007
+EXPOSE 9008
+EXPOSE 9009
+EXPOSE 9010
+EXPOSE 4000
 
 ADD run-server.sh /share/run-server.sh
 
