@@ -1,9 +1,8 @@
 all: push
 
-TAG = 24.20.trixie.slim
+TAG = 24.20.trixie.slim.base
 PREFIX = crpi-8kvyt6flnal17nk5.cn-beijing.personal.cr.aliyuncs.com
 IMAGE_NAME = liveno/node
-
 
 container:
 	docker build -t ${PREFIX}/${IMAGE_NAME}:${TAG} .
