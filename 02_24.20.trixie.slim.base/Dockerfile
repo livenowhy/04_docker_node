@@ -16,7 +16,7 @@ EXPOSE 9010
 EXPOSE 4000
 EXPOSE 3000
 
-RUN mkdir /share && mkdir /share/modules
+RUN mkdir /share
 WORKDIR /share
 
 ADD run-server.sh /share/run-server.sh
