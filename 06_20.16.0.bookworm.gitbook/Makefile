@@ -1,8 +1,8 @@
 all: push
 
-TAG = 20.16.0-bookworm-vue
-PREFIX = registry.cn-beijing.aliyuncs.com
-IMAGE_NAME = livenowhy/node
+TAG = gitbook
+PREFIX = crpi-8kvyt6flnal17nk5.cn-beijing.personal.cr.aliyuncs.com
+IMAGE_NAME = liveno/node
 
 container:
 	docker build -t ${PREFIX}/${IMAGE_NAME}:${TAG} .
