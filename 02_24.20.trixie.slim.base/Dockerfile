@@ -6,7 +6,6 @@ RUN /bin/sh -c set -ex; apt-get update; apt-get install -y --no-install-recommen
 RUN mkdir /share && mkdir /share/modules
 WORKDIR /share
 
-# pnpm 10.x 需要 Node >= 22.13, 固定 pnpm@9 以兼容 Node 20.16.0
 RUN npm install -g pnpm
 RUN pnpm config set registry https://registry.npmmirror.com
 
