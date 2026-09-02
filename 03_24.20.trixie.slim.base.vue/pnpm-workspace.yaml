@@ -1,8 +1,0 @@
-# pnpm 11 默认阻止依赖包运行构建脚本 (postinstall 等)
-# 通过 allowBuilds 白名单放行需要构建脚本的依赖
-# 若报错中还有其他被拒绝的包, 将包名加入此列表
-# 如不需要精确控制, 可取消注释下面一行允许所有构建脚本:
-# dangerouslyAllowAllBuilds: true
-allowBuilds:
-  esbuild: "*"
-  "@parcel/watcher": "*"
