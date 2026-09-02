@@ -14,6 +14,7 @@ EXPOSE 9008
 EXPOSE 9009
 EXPOSE 9010
 EXPOSE 4000
+EXPOSE 3000
 
 RUN mkdir /share && mkdir /share/modules
 WORKDIR /share
