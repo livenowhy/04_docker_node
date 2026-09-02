@@ -1,6 +1,6 @@
 all: push
 
-TAG = 24.20.trixie.slim.base.vue
+TAG = 24.20.trixie.slim.vue
 PREFIX = crpi-8kvyt6flnal17nk5.cn-beijing.personal.cr.aliyuncs.com
 IMAGE_NAME = liveno/node
 
