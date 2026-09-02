@@ -1,7 +1,7 @@
 FROM crpi-8kvyt6flnal17nk5.cn-beijing.personal.cr.aliyuncs.com/liveno/node:24.20.trixie.slim
 LABEL description="node vue 镜像 基于 node:24.20.trixie.slim"
 
-RUN /bin/sh -c set -ex; apt-get update; apt-get install -y --no-install-recommends vim ; rm -rf /var/lib/apt/lists/*
+RUN /bin/sh -c set -ex; apt-get update; apt-get install -y --no-install-recommends vim git ; rm -rf /var/lib/apt/lists/*
 
 EXPOSE 9001 
 EXPOSE 9002
