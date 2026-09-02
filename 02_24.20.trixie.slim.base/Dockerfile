@@ -20,6 +20,7 @@ RUN mkdir /share && mkdir /share/modules
 WORKDIR /share
 
 ADD run-server.sh /share/run-server.sh
+RUN chmod +x /share/run-server.sh
 CMD ["/share/run-server.sh"]
 
 # crpi-8kvyt6flnal17nk5.cn-beijing.personal.cr.aliyuncs.com/liveno/node:24.20.trixie.slim.base
