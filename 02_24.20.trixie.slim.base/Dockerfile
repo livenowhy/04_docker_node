@@ -6,7 +6,9 @@ RUN /bin/sh -c set -ex; apt-get update; apt-get install -y --no-install-recommen
 RUN mkdir /share && mkdir /share/modules
 WORKDIR /share
 
-RUN npm install -g pnpm
+# 固定 pnpm 11.x (需 Node >= 22.13, Node 24.20 满足); 固定大版本保证
+# 后续镜像中 pnpm-workspace.yaml 的 allowBuilds 配置格式一致
+RUN npm install -g pnpm@11
 RUN pnpm config set registry https://registry.npmmirror.com
 
 EXPOSE 9001 

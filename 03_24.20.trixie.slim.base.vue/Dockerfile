@@ -4,6 +4,8 @@ LABEL description="node vue 镜像 基于 node:24.20.trixie.slim.base"
 
 RUN npm install -g @vue/cli
 ADD package.json /share/modules/package.json
+# pnpm 11 默认阻止依赖构建脚本, 通过 pnpm-workspace.yaml 白名单放行
+ADD pnpm-workspace.yaml /share/modules/pnpm-workspace.yaml
 RUN cd /share/modules && pnpm install
 
 
